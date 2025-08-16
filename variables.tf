@@ -37,7 +37,7 @@ variable "identity_pool_provider_display_name" {
 
 variable "service_account_display_name" {
   type    = string
-  default = "Spacelift"
+  default = "Spacelift Service Account"
 }
 
 
@@ -45,10 +45,3 @@ variable "service_account_account_id" {
   type    = string
   default = "spacelift"
 }
-
-variable "service_account_display_name" {
-  type    = string
-  default = "Spacelift Service Account"
-}
-
-
