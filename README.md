@@ -43,7 +43,7 @@ module "spacelift_gcp_integration" {
 | Name | Type | Description |
 |------|------|-------------|
 | `project_id` | `string` | GCP project ID to integrate Spacelift with |
-| `spacelift_account_name` | `string` | Spacelift subdomain (e.g., for `your-subdomain.app.spacelift.io`, use `your-subdomain`) |
+| `spacelift_account_name` | `string` | Spacelift subdomain (e.g., for `your-subdomain.app.spacelift.io`, use `your-subdomain`). If using this module in Spacelift, this value is automatically injected |
 
 ### Optional Variables
 
