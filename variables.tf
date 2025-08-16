@@ -19,7 +19,7 @@ variable "workload_identity_pool_id" {
   default     = "spacelift"
 }
 
-variable "identity_pool_display_name" {
+variable "workload_identity_pool_display_name" {
   type        = string
   description = "Display name for the identity pool"
   default     = "Spacelift"
@@ -30,7 +30,7 @@ variable "workload_identity_pool_provider_id" {
   default = "spacelift-io"
 }
 
-variable "identity_pool_provider_display_name" {
+variable "workload_identity_pool_provider_display_name" {
   type    = string
   default = "Spacelift"
 }

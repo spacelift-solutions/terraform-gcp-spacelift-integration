@@ -1,6 +1,6 @@
 resource "google_iam_workload_identity_pool" "spacelift" {
   workload_identity_pool_id = var.workload_identity_pool_id
-  display_name              = var.identity_pool_display_name
+  display_name              = var.workload_identity_pool_display_name
   description               = "Identity pool for Spacelift"
   disabled                  = false
 }
@@ -8,7 +8,7 @@ resource "google_iam_workload_identity_pool" "spacelift" {
 resource "google_iam_workload_identity_pool_provider" "spacelift" {
   workload_identity_pool_id          = google_iam_workload_identity_pool.spacelift.workload_identity_pool_id
   workload_identity_pool_provider_id = var.workload_identity_pool_provider_id
-  display_name                       = var.identity_pool_provider_display_name
+  display_name                       = var.workload_identity_pool_provider_display_name
   description                        = "OIDC identity pool provider for Spacelift"
   disabled                           = false
 
