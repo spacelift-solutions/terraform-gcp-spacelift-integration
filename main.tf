@@ -17,8 +17,8 @@ resource "google_iam_workload_identity_pool_provider" "spacelift" {
     "attribute.space" = "assertion.spaceId"
   }
   oidc {
-    allowed_audiences = ["${var.spacelift_hostname}.app.spacelift.io"]
-    issuer_uri        = "https://${var.spacelift_hostname}.app.spacelift.io"
+    allowed_audiences = ["${var.spacelift_account_name}.app.spacelift.io"]
+    issuer_uri        = "https://${var.spacelift_account_name}.app.spacelift.io"
   }
 }
 
