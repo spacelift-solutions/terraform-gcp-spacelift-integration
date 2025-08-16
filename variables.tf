@@ -3,11 +3,6 @@ variable "project_id" {
   description = "GCP project ID to integrate spacelift with"
 }
 
-# variable "gcp_region" {
-#   type    = string
-#   default = "europe-west4"
-# }
-
 variable "spacelift_account_name" {
   type        = string
   description = "Spacelift subdomain. e.g. <your-subdomain>.app.spacelift.io. This is automatically populated if you're using this module in spacelift"
